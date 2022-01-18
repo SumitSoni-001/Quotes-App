@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/quote_bg"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:letterSpacing="0.15"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Genius is one percent inspiration and ninety-nine percent perspiration."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxWidth="100dp"
+        android:maxLines="1"
+        android:layout_marginRight="10dp"
+        android:text="Johann Wolfgang"
+        android:textColor="@color/light_black"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="@id/quote"
+        app:layout_constraintTop_toBottomOf="@id/quote" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/light_black"
+        app:layout_constraintLeft_toLeftOf="@id/author"
+        app:layout_constraintRight_toRightOf="@id/author"
+        app:layout_constraintTop_toBottomOf="@id/author" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/light_orange"
+        android:text="Share"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/author" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
